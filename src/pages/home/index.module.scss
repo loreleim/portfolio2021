@@ -1,0 +1,193 @@
+@import "../../style/variables.scss";
+
+.spacer {
+  width: 100%;
+  height: 12vh;
+}
+
+.heroContainer {
+  width: 100%;
+  height: 90vh;
+}
+
+.heroText {
+  color: $black;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -60%);
+  text-align: center;
+  padding: 2rem;
+  //line-height: 1rem;
+}
+
+.heroCentered {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.heroText h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.heroText p {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+
+.pinkRight {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 20vh;
+  transform: translateY(-10%) scale(1.3);
+  transform-origin: right;
+}
+
+.fries {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 150px;
+  transform: scale(1.5);
+}
+
+.pinkLeft {
+  bottom: 10vh;
+  left: 0;
+  position: absolute;
+  width: 20vh;
+  transform: translateX(-40%) scale(1.9);
+  z-index: -2;
+}
+
+.containment {
+  width: 100vw;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%) scale(1.5);
+  z-index: -3;
+}
+
+.featuredProject {
+  width: 100vw;
+  //height: 90vh;
+}
+
+.featuredProject img {
+  width: 100%;
+}
+
+.featuredDetails {
+  padding: 1rem;
+  text-align: center;
+}
+
+.featuredDetails h4 {
+  font-size: 2rem;
+}
+
+.featuredDetails h5 {
+  margin-bottom: 1rem;
+}
+
+.featuredProject button {
+  width: 8rem;
+  height: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  outline: none;
+  border-radius: 4rem;
+  border-style: solid;
+  border-color: $black;
+  color: $black;
+  text-transform: uppercase;
+  padding: 0.25rem;
+  letter-spacing: 0.15rem;
+  border-width: 1px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.featuredProject button:hover {
+  background-color: $black;
+  border-color: $black;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+#scrollText {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  color: $grey;
+}
+
+/*Media Queries*/
+/* Larger than tablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .heroContainer,
+  .containment,
+  .featuredProject {
+    height: 100vh;
+  }
+  .featuredDetails {
+    text-align: left;
+  }
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 70vw;
+    transform: translate(20%, -50%);
+    z-index: -1;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .heroText h1 {
+    font-size: 3.5rem;
+  }
+
+  .heroText h3 {
+  }
+}
+
+/* For Screens & Macs */
+@media (min-width: 2000px) {
+  .heroText h1 {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+
+  .heroText h3 {
+    font-size: 4rem;
+  }
+}

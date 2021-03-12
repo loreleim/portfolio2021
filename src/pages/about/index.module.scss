@@ -1,0 +1,143 @@
+@import "../../style/variables.scss";
+
+.aboutContainer {
+  font-size: 2rem;
+  margin: 2rem;
+  line-height: 2rem;
+  margin-top: 10vh;
+  color: $black;
+}
+
+.aboutContainer svg {
+  fill: $black;
+  height: 70px;
+  width: 70px;
+}
+
+.aboutContainer svg:hover {
+  fill: $blue;
+  transition: 0.2s ease-in-out;
+}
+
+.aboutContainer h1,
+.aboutContainer h2 {
+  font-size: 3rem;
+}
+
+.aboutContainer p,
+.likeContainer {
+  margin-top: 1rem;
+}
+
+.socialContainer {
+  margin-top: 2rem;
+}
+
+.linkedin {
+  margin-right: 1rem;
+  padding: 0.4rem;
+}
+
+.aboutContainer h2 {
+  margin-top: 2rem;
+}
+
+.aboutContainer p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.centerAbout {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.loveEmoji {
+  font-size: 2rem;
+}
+
+.likeContainer {
+  line-height: 1.5rem;
+  line-height: 2rem;
+}
+
+.likeText {
+  font-family: "Fira Sans", sans-serif;
+  color: #262525;
+  text-transform: uppercase;
+  display: inline;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+#itemOne,
+#itemTwo,
+#itemThree {
+  width: fit-content;
+  display: block;
+  color: white;
+  text-shadow: 1.25px 1.25px 1.25px #262525, 0 -1.25px 1.25px #262525,
+    1.25px 1.25px 1.25px #262525, -1.25px 0 0 #262525, 1.25px 1.25px 0 #262525,
+    1.25px 0 0 #262525, 0 -1.25px 0 #262525;
+}
+
+#itemOne:hover {
+  background-color: $blue;
+}
+
+#itemTwo:hover {
+  background-color: $pink;
+}
+
+#itemThree:hover {
+  background-color: $yellow;
+}
+
+.miniExperience {
+  display: block;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.spacer {
+  width: 100%;
+  height: 20vh;
+}
+
+/*Media Queries*/
+/* Larger than tablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .likeText {
+    font-size: 2rem;
+  }
+  #itemOne,
+  #itemTwo,
+  #itemThree {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  .aboutContainer {
+    margin-top: 25vh;
+  }
+  .centerAbout {
+    width: 50%;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+}
+
+/* For Screens & Macs */
+@media (min-width: 2000px) {
+}

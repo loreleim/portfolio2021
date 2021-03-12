@@ -1,0 +1,86 @@
+@import "../../style/variables.scss";
+
+.mainNav {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  background: $black;
+  z-index: 5;
+}
+
+.mainNav ul {
+  list-style: none;
+  text-align: center;
+}
+
+.mainNav li {
+  color: white;
+  height: 100%;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.3rem;
+}
+
+.mainNav li:hover {
+  transition: 0.3s ease;
+  background-color: darken($black, 20%);
+}
+
+nav svg {
+  fill: white;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.siteLogo {
+  display: none;
+  z-index: 5;
+}
+
+/*Media Queries*/
+/* Larger than tablet (also point when grid becomes active) */
+@media (min-width: 400px) {
+  .mainNav li {
+    padding: 0.5rem;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .mainNav {
+    width: 40%;
+    transition: width 2s ease-in;
+    right: 0;
+    border-top-left-radius: 20px;
+  }
+  .navLogo {
+    display: none;
+  }
+  .siteLogo {
+    position: fixed;
+    cursor: pointer;
+    width: 8rem;
+    height: 8rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    display: block;
+    top: 0;
+  }
+  .siteLogo svg {
+    fill: $black;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+}
+
+/* For Screens & Macs */
+@media (min-width: 2000px) {
+}
