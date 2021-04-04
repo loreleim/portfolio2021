@@ -12,7 +12,7 @@ class Sandbox extends React.Component {
     uxShown: false,
     resourcesShown: false,
     featuredShown: true,
-    pageTitle: "Currently Featured",
+    pageTitle: "This site is under construction",
   };
 
   renderFeatured() {
