@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./index.module.scss";
 import store from "../../database";
-import test from "../../images/bus-01.jpg"
 
 export default class Featured extends React.Component {
   render() {
@@ -14,8 +13,7 @@ export default class Featured extends React.Component {
             window.open(Featured.github);
           }}>
               <div className={style.imageCrop}>
-                {/*<img src={Featured.image} />*/}
-                <img src={test}/>
+                <img src={Featured.image} />
               </div>
               <div className={style.overlay}></div>
               <div className={style.projectDetails}>

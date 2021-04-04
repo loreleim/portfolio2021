@@ -89,14 +89,14 @@ class Database {
         {
           name: "Passion to Purpose",
           collab: "Convergence Design Lab",
-          image: require("../images/p2p.gif"),
+          image: "../images/bus-01.jpg",
           link: "/p2p",
           github: "https://convergencedesignlab.org/web-resources/passion-to-purpose/",
         },
         {
           name: "Wordpress Theme",
           collab: "Convergence Design Lab",
-          image: require("../images/cdlmockup-thumb.jpg"),
+          image: "../images/cdlmockup-thumb.jpg",
           link: "/convergence",
           github: "https://convergencedesignlab.org/",
         },
