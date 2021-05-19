@@ -46,7 +46,7 @@ class Dev extends React.Component {
         resourcesShown: false,
         pageTitle: "Full Stack",
       });
-      this.renderUX();
+      this.renderFullStack();
     }
     if (name === "wip") {
       this.setState({
@@ -56,7 +56,7 @@ class Dev extends React.Component {
         resourcesShown: true,
         pageTitle: "WIP",
       });
-      this.renderResources();
+      this.renderWIP();
     }
   };
 
@@ -83,8 +83,8 @@ class Dev extends React.Component {
           </div>
           {this.state.featuredShown && this.renderFeatured()}
           {this.state.workShown && this.renderFeatured()}
-          {this.state.uxShown && this.renderUX()}
-          {this.state.resourcesShown && this.renderResources()}
+          {this.state.uxShown && this.renderFullStack()}
+          {this.state.resourcesShown && this.renderWIP()}
         </section>
       </div>
     );
