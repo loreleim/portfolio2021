@@ -19,17 +19,6 @@ export default class NavOverlay extends React.Component {
             <li onClick={(event) => {event.preventDefault();window.open(Featured.github)}}>{Featured.name}</li>
           ))}
           </div>
-          {/*<div className={style.gridContainer}>
-            {store.projects.Featured.map((Featured) => (
-                <div className={style.projectThumbs} 
-                onClick={(event) => {
-                  event.preventDefault();
-                  window.open(Featured.github);
-                }}
-                style={{ backgroundImage: "url(" + Featured.image + ")", backgroundSize: "cover" }}>
-                </div>
-              ))}
-              </div>*/}
         </nav>
       </div>
     );
