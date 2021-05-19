@@ -1,12 +1,11 @@
 import React from "react";
 import style from "./index.module.scss";
 import Featured from "./featured";
-import Programming from "./programming";
-import Resources from "./resources";
-import UX from "./ux";
+import FullStack from "./featured";
+import WIP from "./featured";
 import {Helmet} from "react-helmet";
 
-class Sandbox extends React.Component {
+class Dev extends React.Component {
   state = {
     workShown: false,
     uxShown: false,
@@ -19,74 +18,71 @@ class Sandbox extends React.Component {
     return <Featured />;
   }
 
-  renderProg() {
-    return <Programming />;
+  renderFullStack() {
+    return <FullStack />;
   }
 
-  renderUX() {
-    return <UX />;
-  }
-
-  renderResources() {
-    return <Resources />;
+  renderWIP() {
+    return <WIP />;
   }
 
   showProgramming = (e) => {
     const name = e.target.name;
-    if (name === "prog") {
+    if (name === "featured") {
       this.setState({
         featuredShown: false,
         workShown: true,
         uxShown: false,
         resourcesShown: false,
-        pageTitle: "Code",
+        pageTitle: "Featured Projects",
       });
-      this.renderProg();
+      this.renderFeatured();
     }
-    if (name === "ux") {
+    if (name === "fullstack") {
       this.setState({
         featuredShown: false,
         workShown: false,
         uxShown: true,
         resourcesShown: false,
-        pageTitle: "UX",
+        pageTitle: "Full Stack",
       });
       this.renderUX();
     }
-    if (name === "resources") {
+    if (name === "wip") {
       this.setState({
         featuredShown: false,
         workShown: false,
         uxShown: false,
         resourcesShown: true,
-        pageTitle: "Resources",
+        pageTitle: "WIP",
       });
       this.renderResources();
     }
   };
 
   render() {
+    console.log("Page Title: " + this.state.pageTitle);
     return (
       <div>
         <Helmet>
           <title>Work</title>
-          <meta name="description" content="Featured works of 2021"/>
+          <meta name="description" content="Lorelei Miyamura's Development Work"/>
         </Helmet>
         <section className={style.workContainer}>
           <h1>{this.state.pageTitle}</h1>
           <div className={style.filterContainer}>
-            <button name="prog" onClick={this.showProgramming}>
-              Code
+            <button name="featured" onClick={this.showProgramming} className={this.state.pageTitle === "Featured Projects" ? style.selected: ""}>
+              Featured
             </button>
-            <button name="ux" onClick={this.showProgramming}>
-              UX
+            <button name="fullstack" onClick={this.showProgramming} className={this.state.pageTitle === "Full Stack" ? style.selected: ""}>
+              Full Stack
             </button>
-            <button name="resources" onClick={this.showProgramming}>
-              Resources
+            <button name="wip" onClick={this.showProgramming} className={this.state.pageTitle === "WIP" ? style.selected: ""}>
+              WIP
             </button>
           </div>
           {this.state.featuredShown && this.renderFeatured()}
-          {this.state.workShown && this.renderProg()}
+          {this.state.workShown && this.renderFeatured()}
           {this.state.uxShown && this.renderUX()}
           {this.state.resourcesShown && this.renderResources()}
         </section>
@@ -95,4 +91,4 @@ class Sandbox extends React.Component {
   }
 }
 
-export default Sandbox;
+export default Dev;

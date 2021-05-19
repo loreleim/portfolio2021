@@ -1,5 +1,4 @@
 import React from "react";
-import style from "./index.module.scss";
 import {Helmet} from 'react-helmet';
 import Hero from "../../components/hero";
 
