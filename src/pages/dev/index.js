@@ -65,7 +65,7 @@ class Dev extends React.Component {
     return (
       <div>
         <Helmet>
-          <title>Work</title>
+          <title>Development</title>
           <meta name="description" content="Lorelei Miyamura's Development Work"/>
         </Helmet>
         <section className={style.workContainer}>
