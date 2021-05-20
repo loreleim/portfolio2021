@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./index.module.scss";
-import store from "../../database";
+import { Link } from "react-router-dom";
 
 export default class NavOverlay extends React.Component {
   render() {
@@ -15,9 +15,9 @@ export default class NavOverlay extends React.Component {
           }}
         >
           <div className={style.centerLi}>
-          {store.projects.Featured.map((Featured) => (
-            <li onClick={(event) => {event.preventDefault();window.open(Featured.github)}}>{Featured.name}</li>
-          ))}
+            <li><Link to={"/"}>Home</Link></li>
+            <li><Link to={"/dev"}>Dev</Link></li>
+            <li><Link to={"/about"}>About</Link></li>
           </div>
         </nav>
       </div>
