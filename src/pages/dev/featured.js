@@ -6,7 +6,7 @@ export default class Featured extends React.Component {
   render() {
     return (
       <div className={style.sketchbookContainer}>
-        {store.Projects.map((Featured) => (
+        {store.projects.map((Featured) => (
           <section key={Featured.name} className={style.projectCard}
           onClick={(event) => {
             event.preventDefault();
