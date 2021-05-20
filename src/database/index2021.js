@@ -7,7 +7,7 @@ class Database {
         image: "../images/bus-01.jpg",
         link: "/bus",
         github: "https://github.com/loreleim/da-bus",
-        tags: "featured"
+        tags: "featured, fullstack"
       },
       {
         name: "Passion to Purpose",
@@ -15,15 +15,7 @@ class Database {
         image: "../images/bus-01.jpg",
         link: "/convergence",
         github: "https://convergencedesignlab.org/",
-        tags: "fullstack"
-      },
-      {
-        name: "Training Modules",
-        collab: "Pollinate x Oregon Lottery",
-        image: "../images/bus-01.jpg",
-        link: "/bus",
-        github: "https://github.com/loreleim/da-bus",
-        tags: "featured"
+        tags: "featured, fullstack"
       },
       {
         name: "Wordpress Theme",
@@ -31,7 +23,7 @@ class Database {
         image: "../images/bus-01.jpg",
         link: "/bus",
         github: "https://github.com/loreleim/da-bus",
-        tags: "featured"
+        tags: "featured, wordpress"
       },
       {
         name: "Annex Art Drop",
@@ -47,7 +39,15 @@ class Database {
         image: "../images/hawaii.gif",
         link: "/hisurvey",
         github: "https://loreleim.github.io/hawaiisurvey/",
-        tags: "featured"
+        tags: "featured, fullstack"
+      },
+      {
+        name: "lauAPI",
+        collab: "Hawai'i Industry Survey 2020",
+        image: "../images/hawaii.gif",
+        link: "/hisurvey",
+        github: "https://loreleim.github.io/hawaiisurvey/",
+        tags: "wip"
       },
     ]
   }
