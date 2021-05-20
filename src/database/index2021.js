@@ -1,6 +1,6 @@
 class Database {
   constructor() {
-    this.Projects = [
+    this.projects = [
       {
         name: "Training Modules",
         collab: "Pollinate x Oregon Lottery",
@@ -15,6 +15,7 @@ class Database {
         image: "../images/bus-01.jpg",
         link: "/convergence",
         github: "https://convergencedesignlab.org/",
+        tags: "fullstack"
       },
       {
         name: "Training Modules",
@@ -22,6 +23,7 @@ class Database {
         image: "../images/bus-01.jpg",
         link: "/bus",
         github: "https://github.com/loreleim/da-bus",
+        tags: "featured"
       },
       {
         name: "Wordpress Theme",
@@ -29,6 +31,7 @@ class Database {
         image: "../images/bus-01.jpg",
         link: "/bus",
         github: "https://github.com/loreleim/da-bus",
+        tags: "featured"
       },
       {
         name: "Annex Art Drop",
@@ -36,6 +39,7 @@ class Database {
         image: "../images/bus-01.jpg",
         link: "/bus",
         github: "https://github.com/loreleim/da-bus",
+        tags: "featured"
       },
       {
         name: "Research Anthology",
@@ -43,6 +47,7 @@ class Database {
         image: "../images/hawaii.gif",
         link: "/hisurvey",
         github: "https://loreleim.github.io/hawaiisurvey/",
+        tags: "featured"
       },
     ]
   }
