@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import style from "./index.module.scss";
 import {Helmet} from "react-helmet";
 import store from "../../database/index2021";
@@ -8,6 +8,11 @@ export default function Dev() {
   const [filteredProjects, setfilteredProjects] = useState([]);
   const [databaseProjects] = useState(store.projects);
   const [pageTitle, setPageTitle] = useState("Featured");
+
+  useEffect(() => {
+    const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured"));
+    setfilteredProjects(onlyInclude);
+  }, []);
 
   function onResetArray() {
     const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured"));
