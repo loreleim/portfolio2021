@@ -10,8 +10,11 @@ export default function Dev() {
   const [pageTitle, setPageTitle] = useState("Featured");
 
   useEffect(() => {
-    const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured"));
-    setfilteredProjects(onlyInclude);
+    const filterFirst = () => {
+      const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured"));
+      setfilteredProjects(onlyInclude);
+    }
+    filterFirst();
   }, []);
 
   function onResetArray() {
