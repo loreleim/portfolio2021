@@ -43,7 +43,23 @@ class Database {
       },
       {
         name: "lauAPI",
-        collab: "Hawai'i Industry Survey 2020",
+        collab: "json api of native plants",
+        image: "../images/hawaii.gif",
+        link: "/hisurvey",
+        github: "https://loreleim.github.io/hawaiisurvey/",
+        tags: "wip"
+      },
+      {
+        name: "daBus",
+        collab: "the bus hawai’i api + sso",
+        image: "../images/hawaii.gif",
+        link: "/hisurvey",
+        github: "https://loreleim.github.io/hawaiisurvey/",
+        tags: "wip"
+      },
+      {
+        name: "greenhaus",
+        collab: "firebase backend, sso",
         image: "../images/hawaii.gif",
         link: "/hisurvey",
         github: "https://loreleim.github.io/hawaiisurvey/",
