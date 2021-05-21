@@ -9,10 +9,7 @@ export default function Dev() {
   const [databaseProjects] = useState(store.projects);
   const [pageTitle, setPageTitle] = useState("Featured");
 
-  
-
   function onResetArray() {
-    //setfilteredProjects([]);
     const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured"));
     setfilteredProjects(onlyInclude);
     setPageTitle("Featured")
@@ -43,14 +40,14 @@ export default function Dev() {
             <button onClick={()=> filterFullstack()} className={pageTitle=== "Fullstack" ? style.selected: ""}>Fullstack</button>
             <button onClick={()=> filterWIP()}  className={pageTitle=== "WIP" ? style.selected: ""}>WIP</button>
           </div>
-          <AutoList databaseProjects={filteredProjects.length > 0 ? filteredProjects : databaseProjects} />
+          <ProjectRender databaseProjects={filteredProjects.length > 0 ? filteredProjects : databaseProjects} />
         </section>
       </div>
 
   );
 }
 
-const AutoList = ({ databaseProjects }) => {
+const ProjectRender = ({ databaseProjects }) => {
   return databaseProjects.map((a, i) => 
   <section key={a.name} className={style.projectCard}
   onClick={(event) => {
