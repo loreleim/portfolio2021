@@ -58,16 +58,16 @@ export default function Dev() {
 }
 
 const ProjectRender = ({ databaseProjects }) => {
-  return databaseProjects.map((a, i) => 
-  <Link to={`/projects/${a.urlSlug}`}>
-  <section key={a.name} className={style.projectCard}>
+  return databaseProjects.map((individualProject, i) => 
+  <Link to={`/projects/${individualProject.urlSlug}`}>
+  <section key={individualProject.name} className={style.projectCard}>
       <div className={style.imageCrop}>
-        <img src={a.image} alt='thumbnail of project'/>
+        <img src={individualProject.image} alt='thumbnail of project'/>
       </div>
       <div className={style.overlay}></div>
       <div className={style.projectDetails}>
-        <h4>{a.name}</h4>
-        <h5>{a.collab}</h5>
+        <h4>{individualProject.name}</h4>
+        <h5>{individualProject.collab}</h5>
       </div>
   </section>
   </Link>);
