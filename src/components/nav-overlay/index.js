@@ -17,6 +17,7 @@ export default class NavOverlay extends React.Component {
           <div className={style.centerLi}>
             <li><Link to={"/"}>Home</Link></li>
             <li><Link to={"/dev"}>Dev</Link></li>
+            <li><Link to={"/uiux"}>UI/UX</Link></li>
             <li><Link to={"/about"}>About</Link></li>
           </div>
         </nav>
