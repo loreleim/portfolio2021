@@ -25,16 +25,16 @@ export default function UiUx() {
     setPageTitle("Featured")
   };
 
-  function filterFullstack() {
-    const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("fullstack"));
+  function filterUI() {
+    const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("ui"));
     setfilteredProjects(onlyInclude);
-    setPageTitle("Fullstack")
+    setPageTitle("UI")
   };
 
-  function filterWIP() {
-    const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("wip"));
+  function filterUX() {
+    const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("ux"));
     setfilteredProjects(onlyInclude);
-    setPageTitle("WIP")
+    setPageTitle("UX")
   };
 
   return (
@@ -47,8 +47,8 @@ export default function UiUx() {
           <h1>{pageTitle}</h1>
           <div className={style.filterContainer}>
             <button onClick={()=> onResetArray()} className={pageTitle=== "Featured" ? style.selected: ""}>Featured</button>
-            <button onClick={()=> filterFullstack()} className={pageTitle=== "Fullstack" ? style.selected: ""}>UI</button>
-            <button onClick={()=> filterWIP()}  className={pageTitle=== "WIP" ? style.selected: ""}>UX</button>
+            <button onClick={()=> filterUI()} className={pageTitle=== "UI" ? style.selected: ""}>UI</button>
+            <button onClick={()=> filterUX()}  className={pageTitle=== "UX" ? style.selected: ""}>UX</button>
           </div>
           <ProjectRender databaseProjects={filteredProjects.length > 0 ? filteredProjects : databaseProjects} />
         </section>
