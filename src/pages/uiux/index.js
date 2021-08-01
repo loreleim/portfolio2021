@@ -12,7 +12,7 @@ export default function UiUx() {
 
   useEffect(() => {
     const filterFirst = () => {
-      const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured"));
+      const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured" && "ui") || passedItem.tags.includes("featured" && "ux"));
       setfilteredProjects(onlyInclude);
     }
     filterFirst();
@@ -20,7 +20,7 @@ export default function UiUx() {
   }, []);
 
   function onResetArray() {
-    const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured"));
+    const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured" && "ui") || passedItem.tags.includes("featured" && "ux"));
     setfilteredProjects(onlyInclude);
     setPageTitle("Featured")
   };

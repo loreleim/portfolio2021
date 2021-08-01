@@ -136,6 +136,36 @@ class Database {
           }
         ]
       },
+      {
+        name: "ui test",
+        urlSlug: "uitest",
+        collab: "firebase backend, sso",
+        image: "../images/hawaii.gif",
+        link: "/hisurvey",
+        github: "https://loreleim.github.io/hawaiisurvey/",
+        tags: "ui, featured",
+        content: [
+          {
+            type: "card",
+            content: "this is a test of information"
+          }
+        ]
+      },
+      {
+        name: "ux test",
+        urlSlug: "uitest",
+        collab: "firebase backend, sso",
+        image: "../images/hawaii.gif",
+        link: "/hisurvey",
+        github: "https://loreleim.github.io/hawaiisurvey/",
+        tags: "ux, featured",
+        content: [
+          {
+            type: "card",
+            content: "this is a test of information"
+          }
+        ]
+      },
     ]
   }
 }
