@@ -5,7 +5,7 @@ import CardTemplate from "../card-template";
 
 function findMatchingObject(name) {
   return store.projects
-    .filter((passedItem) => passedItem.urlVersion === name)
+    .filter((passedItem) => passedItem.urlSlug === name)
     .map((passedItem) => passedItem);
 }
 

@@ -3,7 +3,7 @@ class Database {
     this.projects = [
       {
         name: "ALA Tool",
-        urlVersion: "ala",
+        urlSlug: "ala",
         collab: "American Libraries Association",
         image: "../images/ala-0.jpg",
         link: "/bus",
