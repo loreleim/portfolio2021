@@ -1,4 +1,5 @@
 import React from "react";
+import style from "./index.module.scss";
 import { useParams } from "react-router-dom";
 import store from "../../database/index2021";
 import CardTemplate from "../card-template";
@@ -17,12 +18,12 @@ function checkType(passedObject) {
   }
 }
 
-export default function DogTemplate() {
+export default function ProjectTemplate() {
   let { projectId } = useParams();
   let projectInfo = findMatchingObject(projectId);
 
   return (
-    <div>
+    <div className={style.projectContainer}>
       <h1>{projectInfo[0].name}</h1>
       <h2>Tags: {projectInfo[0].tags}</h2>
       {projectInfo[0].content.map((item, itemIndex) => (
