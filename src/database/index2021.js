@@ -23,7 +23,13 @@ class Database {
         image: "../images/p2p.gif",
         link: "/convergence",
         github: "https://convergencedesignlab.org/",
-        tags: "featured, fullstack"
+        tags: "featured, fullstack",
+        content: [
+          {
+            type: "card",
+            content: "this is a test of information"
+          }
+        ]
       },
       {
         name: "Training Modules",
@@ -32,7 +38,13 @@ class Database {
         image: "../images/bus-01.jpg",
         link: "/bus",
         github: "https://github.com/loreleim/da-bus",
-        tags: "featured, fullstack"
+        tags: "featured, fullstack",
+        content: [
+          {
+            type: "card",
+            content: "this is a test of information"
+          }
+        ]
       },
       {
         name: "Annex Art Drop",
@@ -41,7 +53,13 @@ class Database {
         image: "../images/bus-01.jpg",
         link: "/bus",
         github: "https://github.com/loreleim/da-bus",
-        tags: "featured"
+        tags: "featured",
+        content: [
+          {
+            type: "card",
+            content: "this is a test of information"
+          }
+        ]
       },
       {
         name: "Industry Survey",
@@ -50,7 +68,13 @@ class Database {
         image: "../images/hawaii.gif",
         link: "/hisurvey",
         github: "https://loreleim.github.io/hawaiisurvey/",
-        tags: "featured, fullstack"
+        tags: "featured, fullstack",
+        content: [
+          {
+            type: "card",
+            content: "this is a test of information"
+          }
+        ]
       },
       {
         name: "Wordpress Theme",
@@ -59,7 +83,13 @@ class Database {
         image: "../images/cdlmockup-thumb.jpg",
         link: "/bus",
         github: "https://github.com/loreleim/da-bus",
-        tags: "featured, wordpress"
+        tags: "featured, wordpress",
+        content: [
+          {
+            type: "card",
+            content: "this is a test of information"
+          }
+        ]
       },
       {
         name: "lauAPI",
@@ -68,7 +98,13 @@ class Database {
         image: "../images/hawaii.gif",
         link: "/hisurvey",
         github: "https://loreleim.github.io/hawaiisurvey/",
-        tags: "wip"
+        tags: "wip",
+        content: [
+          {
+            type: "card",
+            content: "this is a test of information"
+          }
+        ]
       },
       {
         name: "daBus",
@@ -77,7 +113,13 @@ class Database {
         image: "../images/bus-01.jpg",
         link: "/hisurvey",
         github: "https://loreleim.github.io/hawaiisurvey/",
-        tags: "wip"
+        tags: "wip",
+        content: [
+          {
+            type: "card",
+            content: "this is a test of information"
+          }
+        ]
       },
       {
         name: "greenhaus",
@@ -86,7 +128,13 @@ class Database {
         image: "../images/hawaii.gif",
         link: "/hisurvey",
         github: "https://loreleim.github.io/hawaiisurvey/",
-        tags: "wip"
+        tags: "wip",
+        content: [
+          {
+            type: "card",
+            content: "this is a test of information"
+          }
+        ]
       },
     ]
   }
