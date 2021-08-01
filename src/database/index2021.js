@@ -18,8 +18,9 @@ class Database {
             imgCaption: "ala logo"
           },
           {
-            type: "topInfo",
-            content: "dissolving barriers to entry for reading and implementing equitable practices."
+            type: "textarea", 
+            title: "Challenge",
+            content: "",
           },
           {
             type: "card",

@@ -2,8 +2,8 @@ import React from "react";
 import style from "./index.module.scss";
 import { useParams } from "react-router-dom";
 import store from "../../database/index2021";
-import CardTemplate from "../card-template";
-import CollabTemplate from "../collab-template";
+import TextAreaTemplate from "../template-textarea";
+import CollabTemplate from "../template-collab";
 
 function findMatchingObject(name) {
   return store.projects
@@ -15,7 +15,7 @@ function checkType(passedObject) {
 
   if (passedObject.type === "card") {
     console.log("this is a card");
-    return <CardTemplate passedData={passedObject} />;
+    return <TextAreaTemplate passedData={passedObject} />;
   }
 
   if (passedObject.type === "collabBlock") {
