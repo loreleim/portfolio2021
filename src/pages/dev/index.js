@@ -22,7 +22,7 @@ export default function Dev() {
   function onResetArray() {
     const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured"));
     setfilteredProjects(onlyInclude);
-    setPageTitle("Featured")
+    setPageTitle("Featured Dev")
   };
 
   function filterFullstack() {
@@ -46,7 +46,7 @@ export default function Dev() {
         <section className={style.workContainer}>
           <h1>{pageTitle}</h1>
           <div className={style.filterContainer}>
-            <button onClick={()=> onResetArray()} className={pageTitle=== "Featured" ? style.selected: ""}>Featured</button>
+            <button onClick={()=> onResetArray()} className={pageTitle=== "Featured Dev" ? style.selected: ""}>Featured</button>
             <button onClick={()=> filterFullstack()} className={pageTitle=== "Fullstack" ? style.selected: ""}>Fullstack</button>
             <button onClick={()=> filterWIP()}  className={pageTitle=== "WIP" ? style.selected: ""}>WIP</button>
           </div>
