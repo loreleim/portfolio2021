@@ -3,7 +3,6 @@
 .collabContainer {
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .collabImg {
@@ -20,6 +19,7 @@
 
 .collabText {
   font-size: 14px;
+  margin-left: 10px;
 
   .client {
     color: $pink;
