@@ -18,6 +18,10 @@ class Database {
             imgCaption: "ala logo"
           },
           {
+            type: "image", 
+            link: "./images/ala-0.jpg"
+          },
+          {
             type: "textarea", 
             title: "Challenge",
             content: "testing",
