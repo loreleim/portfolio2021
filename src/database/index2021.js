@@ -7,7 +7,13 @@ class Database {
         image: "../images/ala-0.jpg",
         link: "/bus",
         github: "https://github.com/loreleim/da-bus",
-        tags: "featured, fullstack"
+        tags: "featured, fullstack", 
+        content: [
+          {
+            type: "card",
+            content: "this is a test of information"
+          }
+        ]
       },
       {
         name: "Passion to Purpose",
