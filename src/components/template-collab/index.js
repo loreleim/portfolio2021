@@ -8,7 +8,7 @@ const CollabTemplate = ({ passedData }) => {
       </div>
       <div className={style.collabText}>
         <p className={style.client}>{passedData.client}</p>
-        <p>{passedData.date}</p>
+        <p className={style.date}>{passedData.date}</p>
       </div>
     </div>
   );
