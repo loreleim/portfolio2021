@@ -1,0 +1,28 @@
+@import "../../style/variables.scss";
+
+.collabContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.collabImg {
+  width: fit-content;
+  img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    vertical-align: middle;
+    object-fit: contain;
+    background-color: black;
+  }
+}
+
+.collabText {
+  font-size: 14px;
+
+  .client {
+    color: $pink;
+    font-weight: bold;
+  }
+}

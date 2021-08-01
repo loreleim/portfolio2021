@@ -3,6 +3,7 @@ import style from "./index.module.scss";
 import { useParams } from "react-router-dom";
 import store from "../../database/index2021";
 import CardTemplate from "../card-template";
+import CollabTemplate from "../collab-template";
 
 function findMatchingObject(name) {
   return store.projects
@@ -16,6 +17,10 @@ function checkType(passedObject) {
     console.log("this is a card");
     return <CardTemplate passedData={passedObject} />;
   }
+
+  if (passedObject.type === "collabBlock") {
+    return <CollabTemplate passedData={passedObject} />;
+  }
 }
 
 export default function ProjectTemplate() {
@@ -25,7 +30,6 @@ export default function ProjectTemplate() {
   return (
     <div className={style.projectContainer}>
       <h1>{projectInfo[0].name}</h1>
-      <h2>Tags: {projectInfo[0].tags}</h2>
       {projectInfo[0].content.map((item, itemIndex) => (
         <div key={itemIndex}>{checkType(item)}</div>
       ))}

@@ -11,6 +11,17 @@ class Database {
         tags: "featured, fullstack", 
         content: [
           {
+            type: "collabBlock",
+            client: "American Libraries Association",
+            date: "July 2020",
+            logo: "https://www.ala.org/sites/all/themes/alaV2/logo.png",
+            imgCaption: "ala logo"
+          },
+          {
+            type: "topInfo",
+            content: "dissolving barriers to entry for reading and implementing equitable practices."
+          },
+          {
             type: "card",
             content: "this is a test of information"
           }
