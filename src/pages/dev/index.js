@@ -8,7 +8,7 @@ export default function Dev() {
 
   const [filteredProjects, setfilteredProjects] = useState([]);
   const [databaseProjects] = useState(store.projects);
-  const [pageTitle, setPageTitle] = useState("Featured");
+  const [pageTitle, setPageTitle] = useState("Featured Dev");
 
   useEffect(() => {
     const filterFirst = () => {
