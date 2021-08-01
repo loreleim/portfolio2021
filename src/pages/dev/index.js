@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import style from "./index.module.scss";
 import {Helmet} from "react-helmet";
+import { Link } from "react-router-dom";
 import store from "../../database/index2021";
 
 export default function Dev() {
@@ -58,11 +59,8 @@ export default function Dev() {
 
 const ProjectRender = ({ databaseProjects }) => {
   return databaseProjects.map((a, i) => 
-  <section key={a.name} className={style.projectCard}
-  onClick={(event) => {
-    event.preventDefault();
-    window.open(a.github);
-  }}>
+  <Link to={`/projects/${a.urlSlug}`}>
+  <section key={a.name} className={style.projectCard}>
       <div className={style.imageCrop}>
         <img src={a.image} alt='thumbnail of project'/>
       </div>
@@ -71,5 +69,6 @@ const ProjectRender = ({ databaseProjects }) => {
         <h4>{a.name}</h4>
         <h5>{a.collab}</h5>
       </div>
-  </section>);
+  </section>
+  </Link>);
 };
