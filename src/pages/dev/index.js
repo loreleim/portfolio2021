@@ -15,6 +15,7 @@ export default function Dev() {
       setfilteredProjects(onlyInclude);
     }
     filterFirst();
+    // eslint-disable-next-line
   }, []);
 
   function onResetArray() {
