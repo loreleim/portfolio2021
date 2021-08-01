@@ -11,6 +11,7 @@ import NavOverlay from "./components/nav-overlay";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Dev from "./pages/dev";
+import ProjectTemplate from "./components/project-template";
 
 const App = withRouter(
   class App extends Component {
@@ -60,6 +61,7 @@ const App = withRouter(
             <Route path="/" exact component={Home}></Route>
             <Route path="/about" component={About}></Route>
             <Route path="/dev" component={Dev}></Route>
+            <Route path="/projects/:projectId" component={ProjectTemplate} />
           </Switch>
         </div>
       );
