@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import store from "../../database/index2021";
 import TextAreaTemplate from "../template-textarea";
 import CollabTemplate from "../template-collab";
+import ImageTemplate from "../template-image";
 
 function findMatchingObject(name) {
   return store.projects
@@ -15,6 +16,10 @@ function checkType(passedObject) {
 
   if (passedObject.type === "textarea") {
     return <TextAreaTemplate passedData={passedObject} />;
+  }
+
+  if (passedObject.type === "image") {
+    return <ImageTemplate passedData={passedObject} />;
   }
 
   if (passedObject.type === "collabBlock") {
