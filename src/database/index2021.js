@@ -18,6 +18,7 @@ class Database {
       },
       {
         name: "Passion to Purpose",
+        urlSlug: "passiontopurpose",
         collab: "Convergence Design Lab",
         image: "../images/p2p.gif",
         link: "/convergence",
@@ -26,6 +27,7 @@ class Database {
       },
       {
         name: "Training Modules",
+        urlSlug: "orlrg",
         collab: "Pollinate x Oregon Lottery",
         image: "../images/bus-01.jpg",
         link: "/bus",
@@ -34,6 +36,7 @@ class Database {
       },
       {
         name: "Annex Art Drop",
+        urlSlug: "annexartdrop",
         collab: "Portland's Annex Art Drop",
         image: "../images/bus-01.jpg",
         link: "/bus",
@@ -42,6 +45,7 @@ class Database {
       },
       {
         name: "Industry Survey",
+        urlSlug: "hawaiisurvey",
         collab: "Paginated Survey to Google Sheets",
         image: "../images/hawaii.gif",
         link: "/hisurvey",
@@ -50,6 +54,7 @@ class Database {
       },
       {
         name: "Wordpress Theme",
+        urlSlug: "cdltheme",
         collab: "Convergence Design Lab",
         image: "../images/cdlmockup-thumb.jpg",
         link: "/bus",
@@ -58,6 +63,7 @@ class Database {
       },
       {
         name: "lauAPI",
+        urlSlug: "lauapi",
         collab: "json api of native plants",
         image: "../images/hawaii.gif",
         link: "/hisurvey",
@@ -66,6 +72,7 @@ class Database {
       },
       {
         name: "daBus",
+        urlSlug: "dabus",
         collab: "the bus hawai’i api + sso",
         image: "../images/bus-01.jpg",
         link: "/hisurvey",
@@ -74,6 +81,7 @@ class Database {
       },
       {
         name: "greenhaus",
+        urlSlug: "greenhaus",
         collab: "firebase backend, sso",
         image: "../images/hawaii.gif",
         link: "/hisurvey",
