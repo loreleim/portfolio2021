@@ -83,7 +83,7 @@ class Database {
         image: "../images/cdlmockup-thumb.jpg",
         link: "/bus",
         github: "https://github.com/loreleim/da-bus",
-        tags: "featured, wordpress",
+        tags: "wordpress",
         content: [
           {
             type: "card",
@@ -137,7 +137,7 @@ class Database {
         ]
       },
       {
-        name: "ui test",
+        name: "UI + Featured",
         urlSlug: "uitest",
         collab: "firebase backend, sso",
         image: "../images/hawaii.gif",
@@ -152,13 +152,28 @@ class Database {
         ]
       },
       {
-        name: "ux test",
+        name: "UX + Featured",
         urlSlug: "uitest",
         collab: "firebase backend, sso",
         image: "../images/hawaii.gif",
         link: "/hisurvey",
         github: "https://loreleim.github.io/hawaiisurvey/",
         tags: "ux, featured",
+        content: [
+          {
+            type: "card",
+            content: "this is a test of information"
+          }
+        ]
+      },
+      {
+        name: "UX Only",
+        urlSlug: "uitest",
+        collab: "firebase backend, sso",
+        image: "../images/hawaii.gif",
+        link: "/hisurvey",
+        github: "https://loreleim.github.io/hawaiisurvey/",
+        tags: "ux",
         content: [
           {
             type: "card",

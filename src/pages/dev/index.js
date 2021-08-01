@@ -12,7 +12,7 @@ export default function Dev() {
 
   useEffect(() => {
     const filterFirst = () => {
-      const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured"));
+      const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured" && "fullstack") || passedItem.tags.includes("featured" && "wip"));
       setfilteredProjects(onlyInclude);
     }
     filterFirst();
@@ -20,7 +20,7 @@ export default function Dev() {
   }, []);
 
   function onResetArray() {
-    const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured"));
+    const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured" && "fullstack") || passedItem.tags.includes("featured" && "wip"));
     setfilteredProjects(onlyInclude);
     setPageTitle("Featured Dev")
   };
