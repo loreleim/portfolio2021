@@ -19,7 +19,7 @@ class Database {
           },
           {
             type: "image", 
-            link: "./images/ala-0.jpg", 
+            link: "../images/ala-0.jpg", 
             imgCaption: "testing"
           },
           {
