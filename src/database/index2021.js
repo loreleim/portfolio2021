@@ -20,7 +20,7 @@ class Database {
           {
             type: "textarea", 
             title: "Challenge",
-            content: "",
+            content: "testing",
           },
           {
             type: "card",

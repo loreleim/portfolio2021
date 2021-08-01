@@ -13,8 +13,7 @@ function findMatchingObject(name) {
 
 function checkType(passedObject) {
 
-  if (passedObject.type === "card") {
-    console.log("this is a card");
+  if (passedObject.type === "textarea") {
     return <TextAreaTemplate passedData={passedObject} />;
   }
 
