@@ -5,6 +5,7 @@ import store from "../../database/index2021";
 import TextAreaTemplate from "../template-textarea";
 import ImageTemplate from "../template-image";
 import TagTemplate from "../template-tags";
+import Quicklinks from "../template-quicklinks";
 
 function findMatchingObject(name) {
   return store.projects
@@ -24,6 +25,10 @@ function checkType(passedObject) {
 
   if(passedObject.type === "tagsBlock") {
     return <TagTemplate passedData={passedObject} />
+  }
+
+  if(passedObject.type === "quicklinks") {
+    return <Quicklinks passedData={passedObject} />
   }
 }
 
