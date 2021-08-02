@@ -34,8 +34,32 @@ class Database {
           },
           {
             type: "textarea", 
-            title: "Research",
+            title: "Overview",
             backing: "01",
+            content: "ALA approached us with a problem. Urban librarians wanted to organize events at their libraries. But many librarians felt they didn’t have the skills to plan one. Our challenge was to design a way to build confidence, offering librarians an insight to ways they could gain more or realize they already had event planning skills. ",
+          },
+          {
+            type: "textarea", 
+            title: "Overview",
+            content: "ALA approached us with a problem. Urban librarians wanted to organize events at their libraries. But many librarians felt they didn’t have the skills to plan one. Our challenge was to design a way to build confidence, offering librarians an insight to ways they could gain more or realize they already had event planning skills. ",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Multidimensional Arrays",
+            backing: "02",
+            content: "ALA approached us with a problem. Urban librarians wanted to organize events at their libraries. But many librarians felt they didn’t have the skills to plan one. Our challenge was to design a way to build confidence, offering librarians an insight to ways they could gain more or realize they already had event planning skills. ",
+          },
+          {
+            type: "textarea", 
+            title: "Rendering Categories",
+            backing: "03",
+            content: "ALA approached us with a problem. Urban librarians wanted to organize events at their libraries. But many librarians felt they didn’t have the skills to plan one. Our challenge was to design a way to build confidence, offering librarians an insight to ways they could gain more or realize they already had event planning skills. ",
+          },
+          {
+            type: "textarea", 
+            title: "Calculating Results",
+            backing: "04",
             content: "ALA approached us with a problem. Urban librarians wanted to organize events at their libraries. But many librarians felt they didn’t have the skills to plan one. Our challenge was to design a way to build confidence, offering librarians an insight to ways they could gain more or realize they already had event planning skills. ",
           },
           {
