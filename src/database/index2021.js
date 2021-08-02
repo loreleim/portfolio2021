@@ -131,7 +131,7 @@ class Database {
             type: "textarea", 
             title: "Confetti",
             backing: "04",
-            content: "something about accessibility",
+            //content: "something about accessibility",
           },
           {
             type: "image", 

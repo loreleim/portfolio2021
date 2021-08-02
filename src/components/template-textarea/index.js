@@ -8,7 +8,7 @@ const TextAreaTemplate = ({ passedData }) => {
         <h2 className={style.backing}>{passedData.backing}</h2>
       </div>
       <div className={style.textContainer} style={passedData.backing ? {marginTop: "3rem"} : null}>
-        <p>{passedData.content}</p>
+        {passedData.content ? <p>{passedData.content}</p> : null}
       </div>
     </div>
   );
