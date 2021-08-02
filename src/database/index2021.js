@@ -220,46 +220,14 @@ class Database {
         ]
       },
       {
-        name: "UI + Featured",
-        urlSlug: "uitest",
-        collab: "firebase backend, sso",
-        longTitle: "heheh xd",
-        image: "../images/hawaii.gif",
+        name: "Passion to Purpose",
+        urlSlug: "p2pux",
+        collab: "Convergence Design Lab",
+        longTitle: "Turning passions into purpose",
+        image: "../images/p2p-09.jpg",
         link: "/hisurvey",
         github: "https://loreleim.github.io/hawaiisurvey/",
-        tags: "ui, featured",
-        content: [
-          {
-            type: "card",
-            content: "this is a test of information"
-          }
-        ]
-      },
-      {
-        name: "UX + Featured",
-        urlSlug: "uitest",
-        collab: "firebase backend, sso",
-        longTitle: "testomg tjos sp far",
-        image: "../images/hawaii.gif",
-        link: "/hisurvey",
-        github: "https://loreleim.github.io/hawaiisurvey/",
-        tags: "ux, featured",
-        content: [
-          {
-            type: "card",
-            content: "this is a test of information"
-          }
-        ]
-      },
-      {
-        name: "UX Only",
-        urlSlug: "uitest",
-        collab: "firebase backend, sso",
-        longTitle: "oh",
-        image: "../images/hawaii.gif",
-        link: "/hisurvey",
-        github: "https://loreleim.github.io/hawaiisurvey/",
-        tags: "ux",
+        tags: "ux, ui, featured",
         content: [
           {
             type: "card",
