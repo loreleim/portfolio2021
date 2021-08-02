@@ -33,7 +33,7 @@ export default function ProjectTemplate() {
 
   return (
     <div className={style.projectContainer}>
-      <h1>{projectInfo[0].name}</h1>
+      <h1>{projectInfo[0].longTitle}</h1>
       {projectInfo[0].content.map((item, itemIndex) => (
         <div key={itemIndex}>{checkType(item)}</div>
       ))}

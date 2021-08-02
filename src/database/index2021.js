@@ -5,6 +5,7 @@ class Database {
         name: "ALA Tool",
         urlSlug: "ala",
         collab: "American Libraries Association",
+        longTitle: "E-course Training Modules for ALA Transforming Community Initiative",
         image: "../images/ala-0.jpg",
         link: "/bus",
         github: "https://github.com/loreleim/da-bus",
