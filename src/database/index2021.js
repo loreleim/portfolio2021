@@ -11,6 +11,10 @@ class Database {
         tags: "featured, fullstack", 
         content: [
           {
+            type: "tagsBlock", 
+            content: "reactjs, quiz-game, conditional-rendering, spread-operator"
+          },
+          {
             type: "collabBlock",
             client: "American Libraries Association",
             date: "July 2020",
@@ -34,10 +38,6 @@ class Database {
           {
             type: "codesnippet",
             content: ""
-          }, 
-          {
-            type: "tagsBlock", 
-            content: "reactjs, quiz-game, conditional-rendering, spread-operator"
           }
         ]
       },
