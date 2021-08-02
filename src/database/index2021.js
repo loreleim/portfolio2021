@@ -22,11 +22,13 @@ class Database {
           {
             type: "textarea", 
             title: "The Challenge",
-            content: "ALA approached us with a problem. Urban librarians wanted to host community events, but many of them felt they didn’t have the skills to plan one. Our challenge was to design a way to build librarian confidence. Offering them insight in ways they could gain more or realize they already had event planning skills. ",
+            content: "ALA approached us with a problem. Urban librarians wanted to organize events at their libraries. But many librarians felt they didn’t have the skills to plan one. Our challenge was to design a way to build confidence, offering librarians an insight to ways they could gain more or realize they already had event planning skills. ",
           },
           {
-            type: "card",
-            content: "this is a test of information"
+            type: "textarea", 
+            title: "Research",
+            backing: "01",
+            content: "ALA approached us with a problem. Urban librarians wanted to organize events at their libraries. But many librarians felt they didn’t have the skills to plan one. Our challenge was to design a way to build confidence, offering librarians an insight to ways they could gain more or realize they already had event planning skills. ",
           },
           {
             type: "codesnippet",

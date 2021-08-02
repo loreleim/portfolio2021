@@ -3,8 +3,11 @@ import style from "./index.module.scss";
 const TextAreaTemplate = ({ passedData }) => {
   return (
     <div className={style.textareaContainer}>
-      <h2>{passedData.title}</h2>
-      <div className={style.textContainer}>
+      <div className={style.headlines} style={passedData.backing ? {marginTop: "3rem"} : null}>
+        <h2>{passedData.title}</h2>
+        <h2 className={style.backing}>{passedData.backing}</h2>
+      </div>
+      <div className={style.textContainer} style={passedData.backing ? {marginTop: "3rem"} : null}>
         <p>{passedData.content}</p>
       </div>
     </div>
