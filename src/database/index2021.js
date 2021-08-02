@@ -41,15 +41,30 @@ class Database {
         name: "Passion to Purpose",
         urlSlug: "passiontopurpose",
         collab: "Convergence Design Lab",
-        longTitle: "Long Title",
+        longTitle: "How can you turn your passion into a purpose?",
         image: "../images/p2p.gif",
         link: "/convergence",
         github: "https://convergencedesignlab.org/",
         tags: "featured, fullstack",
         content: [
           {
-            type: "card",
-            content: "this is a test of information"
+            type: "tagsBlock", 
+            content: "reactjs, quiz-game, conditional-rendering, spread-operator"
+          },
+          {
+            type: "image", 
+            link: "../images/p2p-09.jpg", 
+            imgCaption: "testing"
+          },
+          {
+            type: "textarea", 
+            title: "Define missing UX Fundamentals",
+            backing: "01",
+            content: "When I boarded the project, there were considerable amounts of data already being collected for the project. (i.e. responses being collected via Firebase & Google Analytics) but minimal UX considerations were being made. Passion to Purpose faced problems of not fulfilling their user and audience needs.",
+          },
+          {
+            type: "codesnippet",
+            content: ""
           }
         ]
       },
