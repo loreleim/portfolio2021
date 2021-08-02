@@ -3,7 +3,6 @@ import style from "./index.module.scss";
 import { useParams } from "react-router-dom";
 import store from "../../database/index2021";
 import TextAreaTemplate from "../template-textarea";
-import CollabTemplate from "../template-collab";
 import ImageTemplate from "../template-image";
 import TagTemplate from "../template-tags";
 
@@ -23,10 +22,6 @@ function checkType(passedObject) {
     return <ImageTemplate passedData={passedObject} />;
   }
 
-  if (passedObject.type === "collabBlock") {
-    return <CollabTemplate passedData={passedObject} />;
-  }
-
   if(passedObject.type === "tagsBlock") {
     return <TagTemplate passedData={passedObject} />
   }
@@ -42,6 +37,7 @@ export default function ProjectTemplate() {
       {projectInfo[0].content.map((item, itemIndex) => (
         <div key={itemIndex}>{checkType(item)}</div>
       ))}
+      <div className={style.spacer}></div>
     </div>
   );
 }

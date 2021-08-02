@@ -15,20 +15,13 @@ class Database {
             content: "reactjs, quiz-game, conditional-rendering, spread-operator"
           },
           {
-            type: "collabBlock",
-            client: "American Libraries Association",
-            date: "July 2020",
-            logo: "https://www.ala.org/sites/all/themes/alaV2/logo.png",
-            imgCaption: "ala logo"
-          },
-          {
             type: "image", 
             link: "../images/ala-0.jpg", 
             imgCaption: "testing"
           },
           {
             type: "textarea", 
-            title: "Challenge",
+            title: "The Challenge",
             content: "ALA approached us with a problem. Urban librarians wanted to host community events, but many of them felt they didn’t have the skills to plan one. Our challenge was to design a way to build librarian confidence. Offering them insight in ways they could gain more or realize they already had event planning skills. ",
           },
           {
