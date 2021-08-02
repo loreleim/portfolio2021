@@ -66,13 +66,13 @@ class Database {
             type: "textarea", 
             title: "What could be done?",
             content: "In a 4-step process, I detailed a design process that highlighted the potential users/players' needs. From this user research, we would extend the current app into user testing sessions which would further provide insight into the redesign of the Passion to Purpose tool.",
-            tags: "opensans"
+            tags: "subhead"
           },
           {
             type: "textarea", 
             title: "CLARIFYING USER VS. AUDIENCE",
             content: "In the current state of the tool, Passion to Purpose was designed as a linear flow. Where players entered into the app, answering prompts and then juxtaposing their answers.",
-            tags: "opensans"
+            tags: "subhead"
           },
         ]
       },
