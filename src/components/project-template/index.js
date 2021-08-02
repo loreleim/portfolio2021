@@ -5,6 +5,7 @@ import store from "../../database/index2021";
 import TextAreaTemplate from "../template-textarea";
 import CollabTemplate from "../template-collab";
 import ImageTemplate from "../template-image";
+import TagTemplate from "../template-tags";
 
 function findMatchingObject(name) {
   return store.projects
@@ -24,6 +25,10 @@ function checkType(passedObject) {
 
   if (passedObject.type === "collabBlock") {
     return <CollabTemplate passedData={passedObject} />;
+  }
+
+  if(passedObject.type === "tagsBlock") {
+    return <TagTemplate passedData={passedObject} />
   }
 }
 

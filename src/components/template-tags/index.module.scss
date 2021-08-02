@@ -1,0 +1,18 @@
+@import "../../style/variables.scss";
+
+.tagContainer {
+  display: flex;
+  margin-top: 1rem;
+
+  .individualTag {
+    margin-right: 1rem;
+
+    p {
+      font-size: 14px;
+      padding: 1rem;
+      color: #58a6ff;
+      background-color: rgba(56, 139, 253, 0.1);
+      border-radius: 5rem;
+    }
+  }
+}
