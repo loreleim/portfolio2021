@@ -25,7 +25,7 @@ class Database {
           {
             type: "textarea", 
             title: "Challenge",
-            content: "testing",
+            content: "ALA approached us with a problem. Urban librarians wanted to host community events, but many of them felt they didn’t have the skills to plan one. Our challenge was to design a way to build librarian confidence. Offering them insight in ways they could gain more or realize they already had event planning skills. ",
           },
           {
             type: "card",
