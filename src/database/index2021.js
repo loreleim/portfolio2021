@@ -23,7 +23,9 @@ class Database {
           {
             type: "quicklinks",
             firstText: "View Site", 
-            firstLink: "",
+            firstLink: "https://ltcquiz.ala.org/",
+            secondText: "Github",
+            secondLink: "https://github.com/loreleim/alagame"
           },
           {
             type: "textarea", 
