@@ -35,6 +35,9 @@ class Database {
             type: "codesnippet",
             content: ""
           }, 
+          {
+            type: "tagsBlock", 
+            content: "reactjs, quiz-game, conditional-rendering, spread-operator"
           }
         ]
       },
