@@ -49,7 +49,7 @@ class Database {
         content: [
           {
             type: "tagsBlock", 
-            content: "reactjs, quiz-game, conditional-rendering, spread-operator"
+            content: "reactjs, react-router, gsap animations, firebase"
           },
           {
             type: "image", 
