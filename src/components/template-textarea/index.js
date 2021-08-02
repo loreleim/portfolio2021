@@ -4,7 +4,7 @@ const TextAreaTemplate = ({ passedData }) => {
   return (
     <div className={style.textareaContainer}>
       <div className={style.headlines} style={passedData.backing ? {marginTop: "3rem"} : null}>
-        <h2>{passedData.title}</h2>
+        <h2 className={passedData.tags ? style.opensans : null}>{passedData.title}</h2>
         <h2 className={style.backing}>{passedData.backing}</h2>
       </div>
       <div className={style.textContainer} style={passedData.backing ? {marginTop: "3rem"} : null}>

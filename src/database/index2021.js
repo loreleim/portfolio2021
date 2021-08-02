@@ -63,9 +63,17 @@ class Database {
             content: "When I boarded the project, there were considerable amounts of data already being collected for the project. (i.e. responses being collected via Firebase & Google Analytics) but minimal UX considerations were being made. Passion to Purpose faced problems of not fulfilling their user and audience needs.",
           },
           {
-            type: "codesnippet",
-            content: ""
-          }
+            type: "textarea", 
+            title: "What could be done?",
+            content: "In a 4-step process, I detailed a design process that highlighted the potential users/players' needs. From this user research, we would extend the current app into user testing sessions which would further provide insight into the redesign of the Passion to Purpose tool.",
+            tags: "opensans"
+          },
+          {
+            type: "textarea", 
+            title: "CLARIFYING USER VS. AUDIENCE",
+            content: "In the current state of the tool, Passion to Purpose was designed as a linear flow. Where players entered into the app, answering prompts and then juxtaposing their answers.",
+            tags: "opensans"
+          },
         ]
       },
       {
