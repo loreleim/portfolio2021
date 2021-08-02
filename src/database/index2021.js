@@ -30,6 +30,11 @@ class Database {
           {
             type: "card",
             content: "this is a test of information"
+          },
+          {
+            type: "codesnippet",
+            content: ""
+          }, 
           }
         ]
       },
