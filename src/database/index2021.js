@@ -195,7 +195,7 @@ class Database {
         image: "../images/bus-01.jpg",
         link: "/hisurvey",
         github: "https://loreleim.github.io/hawaiisurvey/",
-        tags: "wip",
+        tags: "featured, ux, ui",
         content: [
           {
             type: "card",
