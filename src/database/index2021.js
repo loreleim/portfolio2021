@@ -21,6 +21,11 @@ class Database {
             imgCaption: "testing"
           },
           {
+            type: "quicklinks",
+            firstText: "View Site", 
+            firstLink: "",
+          },
+          {
             type: "textarea", 
             title: "The Challenge",
             content: "ALA approached us with a problem. Urban librarians wanted to organize events at their libraries. But many librarians felt they didn’t have the skills to plan one. Our challenge was to design a way to build confidence, offering librarians an insight to ways they could gain more or realize they already had event planning skills. ",
