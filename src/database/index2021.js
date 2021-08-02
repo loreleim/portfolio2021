@@ -223,7 +223,7 @@ class Database {
         name: "Passion to Purpose",
         urlSlug: "p2pux",
         collab: "Convergence Design Lab",
-        longTitle: "Turning passions into purpose",
+        longTitle: "How can you turn your passion into a purpose?",
         image: "../images/p2p-09.jpg",
         link: "/hisurvey",
         github: "https://loreleim.github.io/hawaiisurvey/",
