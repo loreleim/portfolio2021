@@ -10,6 +10,7 @@ import Nav from "./components/nav";
 import NavOverlay from "./components/nav-overlay";
 import Home from "./pages/home";
 import About from "./pages/about";
+import Projects from "./pages/projects";
 import Dev from "./pages/dev";
 import UiUx from "./pages/uiux";
 import ProjectTemplate from "./components/project-template";
@@ -63,6 +64,7 @@ const App = withRouter(
             <Route path="/about" component={About}></Route>
             <Route path="/dev" component={Dev}></Route>
             <Route path="/uiux" component={UiUx}></Route>
+            <Route path="/projects" component={Projects}></Route>
             <Route path="/projects/:projectId" component={ProjectTemplate} />
           </Switch>
         </div>
