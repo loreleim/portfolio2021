@@ -303,6 +303,45 @@ class Database {
           },
         ]
       },
+      {
+        name: "Wireframes PDF",
+        urlSlug: "wireframespdf",
+        collab: "Printable worksheets",
+        longTitle: "How can you turn your passion into a purpose?",
+        image: "../images/p2p-09.jpg",
+        link: "/hisurvey",
+        github: "https://loreleim.github.io/hawaiisurvey/",
+        tags: "resources",
+        content: [
+          {
+            type: "tagsBlock", 
+            content: "reactjs, react-router, gsap animations, firebase"
+          },
+          {
+            type: "image", 
+            link: "../images/p2p-09.jpg", 
+            imgCaption: "testing"
+          },
+          {
+            type: "textarea", 
+            title: "Define missing UX Fundamentals",
+            backing: "01",
+            content: "When I boarded the project, there were considerable amounts of data already being collected for the project. (i.e. responses being collected via Firebase & Google Analytics) but minimal UX considerations were being made. Passion to Purpose faced problems of not fulfilling their user and audience needs.",
+          },
+          {
+            type: "textarea", 
+            title: "What could be done?",
+            content: "In a 4-step process, I detailed a design process that highlighted the potential users/players' needs. From this user research, we would extend the current app into user testing sessions which would further provide insight into the redesign of the Passion to Purpose tool.",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "CLARIFYING USER VS. AUDIENCE",
+            content: "In the current state of the tool, Passion to Purpose was designed as a linear flow. Where players entered into the app, answering prompts and then juxtaposing their answers.",
+            tags: "subhead"
+          },
+        ]
+      },
     ]
   }
 }

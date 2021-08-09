@@ -64,7 +64,7 @@ const App = withRouter(
             <Route path="/about" component={About}></Route>
             <Route path="/dev" component={Dev}></Route>
             <Route path="/uiux" component={UiUx}></Route>
-            <Route path="/projects" component={Projects}></Route>
+            <Route path="/featured-projects" component={Projects}></Route>
             <Route path="/projects/:projectId" component={ProjectTemplate} />
           </Switch>
         </div>

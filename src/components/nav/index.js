@@ -23,7 +23,7 @@ export default class Nav extends React.Component {
               </Link>
             </li>
             <li>
-              <Link to={"/projects"}>
+              <Link to={"/featured-projects"}>
                 <WorkSVG />
               </Link>
             </li>
