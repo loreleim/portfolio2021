@@ -23,7 +23,7 @@ export default class Nav extends React.Component {
               </Link>
             </li>
             <li>
-              <Link to={"/dev"}>
+              <Link to={"/projects"}>
                 <WorkSVG />
               </Link>
             </li>
