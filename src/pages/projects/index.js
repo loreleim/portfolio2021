@@ -25,16 +25,16 @@ export default function Projects() {
     setPageTitle("Projects")
   };
 
-  function filterDev() {
-    const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("fullstack"));
-    setfilteredProjects(onlyInclude);
-    setPageTitle("Dev")
-  };
-
   function filterUIUX() {
-    const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("wip"));
+    const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("ui"));
     setfilteredProjects(onlyInclude);
     setPageTitle("UI/UX")
+  };
+
+  function filterResources() {
+    const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("resources"));
+    setfilteredProjects(onlyInclude);
+    setPageTitle("Resources")
   };
 
   return (
@@ -46,9 +46,9 @@ export default function Projects() {
         <section className={style.workContainer}>
           <h1>{pageTitle}</h1>
           <div className={style.filterContainer}>
-            <button onClick={()=> onResetArray()} className={pageTitle=== "Featured" ? style.selected: ""}>Featured</button>
-            <button onClick={()=> filterDev()} className={pageTitle=== "Dev" ? style.selected: ""}>Dev</button>
-            <button onClick={()=> filterUIUX()}  className={pageTitle=== "UI/UX" ? style.selected: ""}>UI/UX</button>
+            <button onClick={()=> onResetArray()} className={pageTitle=== "Projects" ? style.selected: ""}>Dev</button>
+            <button onClick={()=> filterUIUX()} className={pageTitle=== "UI/UX" ? style.selected: ""}>UI/UX</button>
+            <button onClick={()=> filterResources()}  className={pageTitle=== "Resources" ? style.selected: ""}>Resources</button>
           </div>
           <ProjectRender databaseProjects={filteredProjects.length > 0 ? filteredProjects : databaseProjects} />
         </section>
