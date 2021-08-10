@@ -55,7 +55,7 @@ export default function Hero() {
           <div className={style.heroCentered}>
             <h1>Lorelei Miyamura</h1>
             <h2>Interaction Designer</h2>
-            <button onClick={() => history.push('/dev')} className={style.heroButton}>View Work →</button>
+            <button onClick={() => history.push('/featured-projects')} className={style.heroButton}>View Work →</button>
             <div className={style.arrowContainer}>
             </div>
           </div>
