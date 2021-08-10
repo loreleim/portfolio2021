@@ -12,7 +12,7 @@ export default function Projects() {
 
   useEffect(() => {
     const filterFirst = () => {
-      const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured") && (passedItem.tags.includes("fullstack") || passedItem.tags.includes("wip")));
+      const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured") && (passedItem.tags.includes("dev") || passedItem.tags.includes("wip")));
       setfilteredProjects(onlyInclude);
     }
     filterFirst();
@@ -20,7 +20,7 @@ export default function Projects() {
   }, []);
 
   function onResetArray() {
-    const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured") && (passedItem.tags.includes("fullstack") || passedItem.tags.includes("wip")));
+    const onlyInclude = databaseProjects.filter((passedItem) => passedItem.tags.includes("featured") && (passedItem.tags.includes("dev") || passedItem.tags.includes("wip")));
     setfilteredProjects(onlyInclude);
     setPageTitle("Projects")
   };
@@ -46,7 +46,7 @@ export default function Projects() {
         <section className={style.workContainer}>
           <h1>{pageTitle}</h1>
           <div className={style.filterContainer}>
-            <button onClick={()=> onResetArray()} className={pageTitle=== "Projects" ? style.selected: ""}>Dev</button>
+            <button onClick={()=> onResetArray()} className={pageTitle === "Projects" ? style.selected: ""}>Dev</button>
             <button onClick={()=> filterUIUX()} className={pageTitle=== "UI/UX" ? style.selected: ""}>UI/UX</button>
             <button onClick={()=> filterResources()}  className={pageTitle=== "Resources" ? style.selected: ""}>Resources</button>
           </div>

@@ -9,7 +9,7 @@ class Database {
         image: "../images/ala-0.jpg",
         link: "/bus",
         github: "https://github.com/loreleim/da-bus",
-        tags: "featured, fullstack", 
+        tags: "featured, fullstack, dev", 
         content: [
           {
             type: "tagsBlock", 
@@ -18,7 +18,7 @@ class Database {
           {
             type: "image", 
             link: "../images/ala-0.jpg", 
-            imgCaption: "testing"
+            imgCaption: "ALA game overview"
           },
           {
             type: "quicklinks",
@@ -30,37 +30,84 @@ class Database {
           {
             type: "textarea", 
             title: "The Challenge",
-            content: "ALA approached us with a problem. Urban librarians wanted to organize events at their libraries. But many librarians felt they didn’t have the skills to plan one. Our challenge was to design a way to build confidence, offering librarians an insight to ways they could gain more or realize they already had event planning skills. ",
+            content: "ALA approached us with a problem. Urban librarians wanted to organize events at their libraries. But many of them felt they didn’t have skills to plan one. Our challenge was to design a solution that would build event planning confidence amongst librarians.",
           },
           {
             type: "textarea", 
-            title: "Overview",
-            backing: "01",
-            content: "ALA approached us with a problem. Urban librarians wanted to organize events at their libraries. But many librarians felt they didn’t have the skills to plan one. Our challenge was to design a way to build confidence, offering librarians an insight to ways they could gain more or realize they already had event planning skills. ",
-          },
-          {
-            type: "textarea", 
-            title: "Overview",
-            content: "ALA approached us with a problem. Urban librarians wanted to organize events at their libraries. But many librarians felt they didn’t have the skills to plan one. Our challenge was to design a way to build confidence, offering librarians an insight to ways they could gain more or realize they already had event planning skills. ",
+            title: "My Role",
+            content: "UI Designer & React Developer",
             tags: "subhead"
           },
           {
             type: "textarea", 
-            title: "Multidimensional Arrays",
+            title: "Timeline",
+            content: "Jan - March 2021",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Infrastructure",
+            backing: "01",
+            content: "The ALA team was in the midst of switching Content Management Systems from Drupal to Wordpress. Thus, we had to utilize a system that could be utilized in either serverspace. We chose to develop a React.js microsite, where it could live in a subdomain under the new Wordpress allocation."
+          },
+          {
+            type: "textarea", 
+            title: "UI Design",
             backing: "02",
-            content: "ALA approached us with a problem. Urban librarians wanted to organize events at their libraries. But many librarians felt they didn’t have the skills to plan one. Our challenge was to design a way to build confidence, offering librarians an insight to ways they could gain more or realize they already had event planning skills. ",
+            content: "This project kicked off with UI and flow considerations. I sketched, designed and presented UI layouts to help viz the experience. These were then approved by our client.",
+          },
+          {
+            type: "textarea", 
+            title: "Wireframes",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Mid Fidelity Wireframes",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Architecture",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Features & Development",
+            backing: "03",
+            content: "We approached this experience with our audience’s existing quiz schemas. Following the love of personality quizzes by our intended audience -- 30-40 year old urban librarians -- I designed a small web tool that functioned similarly to BuzzFeed or Facebook personality quizzes.",
+          },
+          {
+            type: "textarea", 
+            content: "I utilized the following features for this tool:",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Multidimensional Database",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Conditional rendering & styling",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Calculating results",
+            tags: "subhead"
           },
           {
             type: "textarea", 
             title: "Rendering Categories",
             backing: "03",
-            content: "ALA approached us with a problem. Urban librarians wanted to organize events at their libraries. But many librarians felt they didn’t have the skills to plan one. Our challenge was to design a way to build confidence, offering librarians an insight to ways they could gain more or realize they already had event planning skills. ",
+            content: "This tool stores all questions, responses, and categories within a multidimensional database. Meaning score calculation could occur simultaneously as the user clicks through options. The nature of the quiz was to “select all that apply”. Meaning some questions could be left blank and that the quiz may be submitted at any time. The multidimensional database complimented the dynamic flow of the application.",
           },
           {
             type: "textarea", 
-            title: "Calculating Results",
+            title: "Conditional rendering & styling",
             backing: "04",
-            content: "ALA approached us with a problem. Urban librarians wanted to organize events at their libraries. But many librarians felt they didn’t have the skills to plan one. Our challenge was to design a way to build confidence, offering librarians an insight to ways they could gain more or realize they already had event planning skills. ",
+            content: "Conditional styling was necessary for button clicks.",
           },
           {
             type: "codesnippet",
@@ -76,7 +123,7 @@ class Database {
         image: "../images/p2p.gif",
         link: "/convergence",
         github: "https://convergencedesignlab.org/",
-        tags: "featured, fullstack",
+        tags: "featured, fullstack, dev",
         content: [
           {
             type: "tagsBlock", 
@@ -160,7 +207,7 @@ class Database {
         image: "../images/bus-01.jpg",
         link: "/bus",
         github: "https://github.com/loreleim/da-bus",
-        tags: "featured, fullstack",
+        tags: "featured, fullstack, dev",
         content: [
           {
             type: "card",
