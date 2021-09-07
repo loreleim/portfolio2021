@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import style from "./index.module.scss";
 import {Helmet} from "react-helmet";
 import { Link } from "react-router-dom";
@@ -6,9 +7,11 @@ import store from "../../database/index2021";
 
 export default function Projects() {
 
+  const history = useHistory();
   const [filteredProjects, setfilteredProjects] = useState([]);
   const [databaseProjects] = useState(store.projects);
   const [pageTitle, setPageTitle] = useState("Projects");
+  const [moreLink, setMoreLink] = useState("/dev");
 
   useEffect(() => {
     const filterFirst = () => {
@@ -37,6 +40,17 @@ export default function Projects() {
     setPageTitle("Resources")
   };
 
+  function setRedirectLink() {
+    //check page title
+    if (pageTitle === "Projects") {
+      setMoreLink("/dev")
+    }
+    if (pageTitle === "UI/UX") {
+      setMoreLink("/uiux")
+    }
+    history.push(moreLink);
+  };
+
   return (
       <div>
         <Helmet>
@@ -51,6 +65,10 @@ export default function Projects() {
             <button onClick={()=> filterResources()}  className={pageTitle=== "Resources" ? style.selected: ""}>Resources</button>
           </div>
           <ProjectRender databaseProjects={filteredProjects.length > 0 ? filteredProjects : databaseProjects} />
+          <div className={style.moreContainer}>
+            <button onClick={() => setRedirectLink()}>View More →</button>
+          </div>
+          <div className={style.spacer}></div>
         </section>
       </div>
 
