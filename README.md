@@ -1,58 +1,15 @@
-# Portfolio 2021
-Built different
+## Local Dev
 
+```
+npm run dev
+```
 
-## Failures and Successes
+## Installed Modules
+```
+npm i @react-spring/web
+```
 
-<details>
-  <summary>Version 2021 Attempted Solution</summary>
-  
-  ```
-          {store.projects.map((projects) => {
-            if (projects.tags.includes(this.state.selectedTag)) {
-              return <section key={projects.name} className={style.projectCard}
-              onClick={(event) => {
-                event.preventDefault();
-                window.open(projects.github);
-              }}>
-                  <div className={style.imageCrop}>
-                    <img src={projects.image} alt='thumbnail of project'/>
-                  </div>
-                  <div className={style.overlay}></div>
-                  <div className={style.projectDetails}>
-                    <h4>{projects.name}</h4>
-                    <h5>{projects.collab}</h5>
-                  </div>
-              </section>;
-            } else {}
-            return <div></div>
-          })}
-  ```
-</details>
-
-
-<details>
-  <summary>Version 2021 Solution</summary>
-  
-  ```
-          {store.projects.map((projects) => {
-            if (projects.tags.includes(this.state.selectedTag)) {
-              return <section key={projects.name} className={style.projectCard}
-              onClick={(event) => {
-                event.preventDefault();
-                window.open(projects.github);
-              }}>
-                  <div className={style.imageCrop}>
-                    <img src={projects.image} alt='thumbnail of project'/>
-                  </div>
-                  <div className={style.overlay}></div>
-                  <div className={style.projectDetails}>
-                    <h4>{projects.name}</h4>
-                    <h5>{projects.collab}</h5>
-                  </div>
-              </section>;
-            } else {}
-            return <div></div>
-          })}
-  ```
-</details>
+For better fallback font handling, which honestly is handled in Next.js 14 with just next/font
+```
+npm i @next/font
+```

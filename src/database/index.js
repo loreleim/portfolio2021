@@ -1,230 +1,366 @@
+import spclThumbail from "../images/projects/spcl-thumbnail.gif";
+import unThumbnail from "../images/projects/un-thumbnail.png";
+import orlThumbnail from "../images/projects/orl-map-thumbnail.png";
+
 class Database {
   constructor() {
-    this.workData = {
-      ResourcesArray: [
-        {
-          name: "Modern Wireframes",
-          medium: "PDF Printout",
-          description: "this is a mockup for blank",
-        },
-      ],
-      UXArray: [
-        {
-          name: "Facilitator's Guide",
-          medium: "Stakeholder Guide",
-          link: "page",
-          description: "this is a mockup for blank",
-        },
-        {
-          name: "The Bus Hawai'i",
-          medium: "Case Study",
-          link: "page",
-          description: "this is a mockup for blank",
-        },
-        {
-          name: "Equity Framework",
-          medium: "Interactive PDFs",
-          link: "page",
-          description: "this is a mockup for blank",
-        },
-      ],
-      ProgArray: [
-        {
-          name: "ALA Tool",
-          medium: "React.js",
-          link: "/ala",
-          description: "this is a mockup for blank",
-          github: "https://loreleim.github.io/alagame/",
-        },
-        {
-          name: "Passion to Purpose",
-          medium: "React.js",
-          collab: "Convergence Design Lab",
-          link: "/p2p",
-          github: "https://convergencedesignlab.org/web-resources/passion-to-purpose/",
-        },
-        {
-          name: "Wordpress Theme",
-          medium: "React.js",
-          link: "page",
-          description: "this is a mockup for blank",
-          github: "https://convergencedesignlab.org/",
-        },
-        {
-          name: "Industry Survey",
-          medium: "React w/ Google Sheets API",
-          link: "page",
-          description: "this is a mockup for blank",
-          github: "https://loreleim.github.io/hawaiisurvey/",
-        },
-        {
-          name: "Nettiquette AR",
-          medium: "Unity & Vuforia",
-          link: "page",
-          description: "this is a mockup for blank",
-          github: "https://github.com/loreleim/nettiquette-augmentedreality",
-        },
-        {
-          name: "DaBus Hawai'i",
-          medium: "React, Firebase & TheBus API",
-          link: "page",
-          description: "this is a mockup for blank",
-          github: "https://github.com/loreleim/da-bus",
-        },
-      ],
-    };
-    this.projects = {
-      Featured: [
-        {
-          name: "Passion to Purpose",
-          collab: "Convergence Design Lab",
-          link: "/p2p",
-          github: "https://convergencedesignlab.org/web-resources/passion-to-purpose/",
-        },
-        {
-          name: "Wordpress Theme",
-          collab: "Convergence Design Lab",
-          link: "/convergence",
-          github: "https://convergencedesignlab.org/",
-        },
-        {
-          name: "Da Bus",
-          collab: "The Bus Hawai'i",
-          link: "/bus",
-          github: "https://github.com/loreleim/da-bus",
-        },
-        {
-          name: "Equity Framework",
-          collab: "Chicago Public Schools",
-          link: "/equity",
-          github: "https://equity.cps.edu/",
-        },
-        {
-          name: "Nettiquette Game",
-          collab: "Augmented Reality",
-          link: "/nettiquette",
-          github: "https://github.com/loreleim/nettiquette-augmentedreality",
-        },
-        {
-          name: "Research Anthology",
-          collab: "Hawai'i Industry Survey 2020",
-          link: "/hisurvey",
-          github: "https://loreleim.github.io/hawaiisurvey/",
-        },
-      ],
-    };
-    this.details = {
-      P2P: [
-        {
-          section: "introduction",
-          text: "this is a mockup for blank",
-        },
-        {
-          section: "details",
-          title: "Project Overview",
-          text:
-            "dissolving barriers to entry for reading and implementing equitable practices.",
-        },
-      ],
-      daBus: [
-        {
-          projectOverview: "something",
-          timeline: "2 weeks",
-          role: "UX Designer",
-          words: "The Bus is a supplemental website for the public transit system located on Oahu, Hawai’i. The site serves as a database of information. Including announcements, real time bus arrivals, timetables, and information about fares; functioning as a bulletin board of updated information.",
-        }
-      ],
-      Equity: [
-        {
-          section: "goal",
-          title: "The Goal",
-          subtext: "was to turn this",
-        },
-        {
-          section: "goal",
-          title: "Into This",
-          subtext: "(a UX and Graphic overhaul)",
-        },
-        {
-          section: "client",
-          title: "Client Needs 01",
-          subtext:
-            "A style guide to inspire uniform design & consistency beyond our involvement",
-        },
-        {
-          section: "client2",
-          title: "Client Needs 02",
-          subtext:
-            "Visualization of their academic writing, which is both readable and digestable.",
-        },
-        {
-          section: "client",
-          title: "Client Needs 03",
-          subtext:
-            "Cross-Platform Design i.e. designs that would work in a PDF, on a powerpoint, and on a website.",
-        },
-        {
-          section: "audience1",
-          title: "Audience Needs 01",
-          subtext:
-            "As a parent, how does equity affect my child(ren), how can my child thrive in an equity based environment?",
-        },
-        {
-          section: "audience2",
-          title: "Audience Needs 02",
-          subtext:
-            "How can we, the community leaders, use equity to empower youth beyond the classroom?",
-        },
-        {
-          section: "user1",
-          title: "User Needs 01",
-          subtext:
-            "How can I, the educator, implement Equity in the classroom?",
-        },
-        {
-          section: "user2",
-          title: "User Needs 02",
-          subtext:
-            "How can we, the administration, empower teachers to use Equity based practices in the classroom and beyond?",
-        },
-        {
-          section: "clientMap",
-          title: "Client Map",
-          subtext:
-            "test",
-        },
-        {
-          section: "userMap",
-          title: "User Map",
-          subtext:
-            "test",
-        },
-        {
-          section: "audienceMap",
-          title: "Audience Map",
-          subtext:
-            "test",
-        },
-        {
-          section: "lowFidel",
-          title: "Low Fidelity",
-          subtext:
-            "Low fidel",
-        },
-        {
-          section: "midFidel",
-          title: "Mid Fidel",
-          subtext:
-            "text",
-        },
-        {
-          section: "finalFidel",
-          title: "Two emails later...",
-          subtext:
-            "Designs are client approved!",
-        },
-      ],
-    };
+    this.projects = [
+      {
+        name: "Specialized Custom Waterbottles",
+        urlSlug: "specialized",
+        collab: "Specialized x Spectrum",
+        description: "A Shopify x Customizer experience, including an Azure Functions' Order Acknowledgement integration",
+        image: spclThumbail,
+        imageAlt: "thumbnail of the specialized custom waterbottles experience",
+        link: "/bus",
+        github: "https://github.com/loreleim/da-bus",
+        finalLink: "https://specializedcustom.com/",
+        tags: "featured, fullstack, dev", 
+        content: [
+          {
+            type: "tagsBlock", 
+            content: "liquid, shopify, azure functions, admin customizations"
+          },
+          {
+            type: "image", 
+            link: spclThumbail, 
+            imgCaption: "ALA game overview"
+          },
+          {
+            type: "quicklinks",
+            firstText: "View Site", 
+            firstLink: "https://specializedcustom.com/",
+          },
+          {
+            type: "textarea", 
+            title: "Last updated Oct 2024",
+            content: "project breakdown coming soon",
+          },
+          /*{
+            type: "textarea", 
+            title: "My Role",
+            content: "Integration Engineer",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Timeline",
+            content: "October 2023 - January 2024",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Infrastructure",
+            backing: "01",
+            content: "The ALA team was in the midst of switching Content Management Systems from Drupal to Wordpress. Thus, we had to utilize a system that could be utilized in either serverspace. We chose to develop a React.js microsite, where it could live in a subdomain under the new Wordpress allocation."
+          },
+          {
+            type: "textarea", 
+            title: "UI Design",
+            backing: "02",
+            content: "This project kicked off with UI and flow considerations. I sketched, designed and presented UI layouts to help viz the experience. These were then approved by our client.",
+          },
+          {
+            type: "textarea", 
+            title: "Wireframes",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Mid Fidelity Wireframes",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Architecture",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Features & Development",
+            backing: "03",
+            content: "We approached this experience with our audience’s existing quiz schemas. Following the love of personality quizzes by our intended audience -- 30-40 year old urban librarians -- I designed a small web tool that functioned similarly to BuzzFeed or Facebook personality quizzes.",
+          },
+          {
+            type: "textarea", 
+            content: "I utilized the following features for this tool:",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Multidimensional Database",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Conditional rendering & styling",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Calculating results",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Rendering Categories",
+            backing: "03",
+            content: "This tool stores all questions, responses, and categories within a multidimensional database. Meaning score calculation could occur simultaneously as the user clicks through options. The nature of the quiz was to “select all that apply”. Meaning some questions could be left blank and that the quiz may be submitted at any time. The multidimensional database complimented the dynamic flow of the application.",
+          },
+          {
+            type: "textarea", 
+            title: "Conditional rendering & styling",
+            backing: "04",
+            content: "Conditional styling was necessary for button clicks.",
+          },
+          {
+            type: "codesnippet",
+            content: ""
+          }*/
+         {
+          type: "spacer"
+         }
+        ]
+      },
+      {
+        name: "Retailer Map",
+        urlSlug: "oregonlottery",
+        collab: "Pollinate x Oregon Lottery",
+        description: "A Shopify x Customizer experience, including an Azure Functions' Order Acknowledgement integration",
+        image: orlThumbnail,
+        imageAlt: "thumbnail of the specialized custom waterbottles experience",
+        link: "/bus",
+        github: "https://github.com/loreleim/da-bus",
+        finalLink: "https://www.oregonlottery.org/retailer/where-to-play/",
+        tags: "featured, fullstack, dev", 
+        content: [
+          {
+            type: "tagsBlock", 
+            content: "ux-design, wordpress, maui-net, cross-platform"
+          },
+          {
+            type: "image", 
+            link: orlThumbnail, 
+            imgCaption: "ALA game overview"
+          },
+          {
+            type: "quicklinks",
+            firstText: "View Site", 
+            firstLink: "https://www.oregonlottery.org/retailer/where-to-play/",
+            //secondText: "Github",
+            //secondLink: "https://github.com/loreleim/alagame"
+          },
+          {
+            type: "textarea", 
+            title: "Last updated Oct 2024",
+            content: "project breakdown coming soon...",
+          },
+          /*{
+            type: "textarea", 
+            title: "My Role",
+            content: "UI Designer & React Developer",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Timeline",
+            content: "Jan - March 2021",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Infrastructure",
+            backing: "01",
+            content: "The ALA team was in the midst of switching Content Management Systems from Drupal to Wordpress. Thus, we had to utilize a system that could be utilized in either serverspace. We chose to develop a React.js microsite, where it could live in a subdomain under the new Wordpress allocation."
+          },
+          {
+            type: "textarea", 
+            title: "UI Design",
+            backing: "02",
+            content: "This project kicked off with UI and flow considerations. I sketched, designed and presented UI layouts to help viz the experience. These were then approved by our client.",
+          },
+          {
+            type: "textarea", 
+            title: "Wireframes",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Mid Fidelity Wireframes",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Architecture",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Features & Development",
+            backing: "03",
+            content: "We approached this experience with our audience’s existing quiz schemas. Following the love of personality quizzes by our intended audience -- 30-40 year old urban librarians -- I designed a small web tool that functioned similarly to BuzzFeed or Facebook personality quizzes.",
+          },
+          {
+            type: "textarea", 
+            content: "I utilized the following features for this tool:",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Multidimensional Database",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Conditional rendering & styling",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Calculating results",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Rendering Categories",
+            backing: "03",
+            content: "This tool stores all questions, responses, and categories within a multidimensional database. Meaning score calculation could occur simultaneously as the user clicks through options. The nature of the quiz was to “select all that apply”. Meaning some questions could be left blank and that the quiz may be submitted at any time. The multidimensional database complimented the dynamic flow of the application.",
+          },
+          {
+            type: "textarea", 
+            title: "Conditional rendering & styling",
+            backing: "04",
+            content: "Conditional styling was necessary for button clicks.",
+          },
+          {
+            type: "codesnippet",
+            content: ""
+          }*/
+          {
+            type: "spacer"
+          }
+        ]
+      },
+      {
+        name: "Milestone Tracker",
+        urlSlug: "unhbcu",
+        collab: "Uncle Nearest Whiskey",
+        description: "A Shopify x Customizer experience, including an Azure Functions' Order Acknowledgement integration",
+        image: unThumbnail,
+        imageAlt: "thumbnail of the specialized custom waterbottles experience",
+        link: "/bus",
+        github: "https://github.com/loreleim/da-bus",
+        finalLink: "https://www.oregonlottery.org/retailer/where-to-play/",
+        tags: "featured, fullstack, dev", 
+        content: [
+          {
+            type: "tagsBlock", 
+            content: "wordpress, advanced-custom-fields"
+          },
+          {
+            type: "image", 
+            link: unThumbnail, 
+            imgCaption: "ALA game overview"
+          },
+          {
+            type: "quicklinks",
+            firstText: "View Site", 
+            firstLink: "https://ltcquiz.ala.org/",
+            //secondText: "Github",
+            //secondLink: "https://github.com/loreleim/alagame"
+          },
+          {
+            type: "textarea", 
+            title: "Last updated Oct 2024",
+            content: "project breakdown coming soon...",
+          },
+          /*{
+            type: "textarea", 
+            title: "My Role",
+            content: "UI Designer & React Developer",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Timeline",
+            content: "Jan - March 2021",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Infrastructure",
+            backing: "01",
+            content: "The ALA team was in the midst of switching Content Management Systems from Drupal to Wordpress. Thus, we had to utilize a system that could be utilized in either serverspace. We chose to develop a React.js microsite, where it could live in a subdomain under the new Wordpress allocation."
+          },
+          {
+            type: "textarea", 
+            title: "UI Design",
+            backing: "02",
+            content: "This project kicked off with UI and flow considerations. I sketched, designed and presented UI layouts to help viz the experience. These were then approved by our client.",
+          },
+          {
+            type: "textarea", 
+            title: "Wireframes",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Mid Fidelity Wireframes",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Architecture",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Features & Development",
+            backing: "03",
+            content: "We approached this experience with our audience’s existing quiz schemas. Following the love of personality quizzes by our intended audience -- 30-40 year old urban librarians -- I designed a small web tool that functioned similarly to BuzzFeed or Facebook personality quizzes.",
+          },
+          {
+            type: "textarea", 
+            content: "I utilized the following features for this tool:",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Multidimensional Database",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Conditional rendering & styling",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Calculating results",
+            tags: "subhead"
+          },
+          {
+            type: "textarea", 
+            title: "Rendering Categories",
+            backing: "03",
+            content: "This tool stores all questions, responses, and categories within a multidimensional database. Meaning score calculation could occur simultaneously as the user clicks through options. The nature of the quiz was to “select all that apply”. Meaning some questions could be left blank and that the quiz may be submitted at any time. The multidimensional database complimented the dynamic flow of the application.",
+          },
+          {
+            type: "textarea", 
+            title: "Conditional rendering & styling",
+            backing: "04",
+            content: "Conditional styling was necessary for button clicks.",
+          },
+          {
+            type: "codesnippet",
+            content: ""
+          }*/
+          {
+            type: "spacer"
+          }
+        ]
+      },
+    ]
   }
 }
 
