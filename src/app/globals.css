@@ -1,0 +1,148 @@
+@import url("https://use.typekit.net/wrh7tfd.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 38, 37, 37;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+  --theme-yellow: #fff683;
+  --theme-pink: #ff77c6;
+  --theme-blue: #66e2ea;
+  --theme-purple: #4841fc;
+  --theme-grey: #cecece;
+  --theme-black: #262525;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 38, 37, 37;
+    --background-end-rgb: 38, 37, 37;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Font Handling */
+h1 {
+  font-family: "bely-display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "bely-display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "bely-display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h5 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+/*Imported from 2021 Styles*/
+
+.heroContainer {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.heroText {
+  background-color: var(--foreground-rgb);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  text-align: center;
+  padding: 2rem;
+}
+
+.heroCentered {
+  width: 100%;
+}
+
+.pinkRight {
+  width: 20vh;
+  transform: translateY(-10%) scale(1.3);
+  transform-origin: right;
+  z-index: 1;
+}
+
+.fries {
+  width: 150px;
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+.pinkLeft {
+  z-index: 1;
+}
+
+
+.likeText {
+  font-family: "Fira Sans", sans-serif;
+  color: #262525;
+  text-transform: uppercase;
+  display: inline;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+#itemOne,
+#itemTwo,
+#itemThree {
+  width: fit-content;
+  display: block;
+  color: white;
+  text-shadow: 1.25px 1.25px 1.25px #262525, 0 -1.25px 1.25px #262525,
+    1.25px 1.25px 1.25px #262525, -1.25px 0 0 #262525, 1.25px 1.25px 0 #262525,
+    1.25px 0 0 #262525, 0 -1.25px 0 #262525;
+}
+
+#itemOne:hover {
+  background-color: var(--theme-blue);
+}
+
+#itemTwo:hover {
+  background-color: var(--theme-pink);
+}
+
+#itemThree:hover {
+  background-color: var(--theme-yellow);
+}
