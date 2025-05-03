@@ -1,3 +1,4 @@
+"use client"; 
 import { BlockCard } from '@/components/block-card';
 import store from '@/database';
 import React from 'react';
