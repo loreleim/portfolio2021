@@ -1,6 +1,7 @@
 import spclThumbail from "../images/projects/spcl-thumbnail.gif";
-import unThumbnail from "../images/projects/un-thumbnail.png";
-import orlThumbnail from "../images/projects/orl-map-thumbnail.png";
+import luluThumbnali from "../images/projects/lulu-thumbnail.jpg";
+import orlThumbnail from "../images/projects/orl-map-thumbnail.jpg";
+
 
 class Database {
   constructor() {
@@ -31,12 +32,12 @@ class Database {
             firstText: "View Site", 
             firstLink: "https://specializedcustom.com/",
           },
-          {
+          /*{
             type: "textarea", 
             title: "Last updated Oct 2024",
             content: "project breakdown coming soon",
           },
-          /*{
+          {
             type: "textarea", 
             title: "My Role",
             content: "Integration Engineer",
@@ -150,11 +151,6 @@ class Database {
             //secondText: "Github",
             //secondLink: "https://github.com/loreleim/alagame"
           },
-          {
-            type: "textarea", 
-            title: "Last updated Oct 2024",
-            content: "project breakdown coming soon...",
-          },
           /*{
             type: "textarea", 
             title: "My Role",
@@ -242,24 +238,24 @@ class Database {
         ]
       },
       {
-        name: "Milestone Tracker",
-        urlSlug: "unhbcu",
-        collab: "Uncle Nearest Whiskey",
-        description: "A Shopify x Customizer experience, including an Azure Functions' Order Acknowledgement integration",
-        image: unThumbnail,
+        name: "Lululemon Custom",
+        urlSlug: "lululemon",
+        collab: "Lululemon",
+        description: "A Custom Shopify theme designed to matched mainline functionality and experience.",
+        image: luluThumbnali,
         imageAlt: "thumbnail of the specialized custom waterbottles experience",
-        link: "/bus",
-        github: "https://github.com/loreleim/da-bus",
-        finalLink: "https://www.oregonlottery.org/retailer/where-to-play/",
+        link: "/lululemon",
+        //github: "https://github.com/loreleim/da-bus",
+        finalLink: "https://customize.lululemon.com/",
         tags: "featured, fullstack, dev", 
         content: [
           {
             type: "tagsBlock", 
-            content: "wordpress, advanced-custom-fields"
+            content: "shopify-theme-dev, customized-products"
           },
           {
             type: "image", 
-            link: unThumbnail, 
+            link: luluThumbnali, 
             imgCaption: "ALA game overview"
           },
           {
@@ -271,8 +267,26 @@ class Database {
           },
           {
             type: "textarea", 
-            title: "Last updated Oct 2024",
-            content: "project breakdown coming soon...",
+            title: "Overview",
+            content: "A Custom Shopify theme designed to matched mainline functionality and experience.",
+          },
+          {
+            type: "textarea", 
+            title: "Hoverable CDP",
+            backing: "01",
+            content: "Designed a product card with color options front and center: a grid of tiny, hoverable swatches sits beneath each item image and as you glide over a swatch, the main photo swaps to that variant. To keep your last choice top of mind, 'Unmistakably yours', the moment a user moves their cursor away, the card remembers the last swatch hovered—so the image stays on that color until you pick a new one. It’s fast, intuitive, and keeps shoppers focused on exactly the bottle they want. Designed to match mainline."
+          },
+          {
+            type: "textarea", 
+            title: "Variant Powered PDPs",
+            backing: "02",
+            content: "Switching metafield carousels and blocks at the same time that a PDP swatch is flipped."
+          },
+          {
+            type: "textarea", 
+            title: "Custom Product to Cart",
+            backing: "03",
+            content: "Handling private metafields and cart customizations to carry to checkout and admin."
           },
           /*{
             type: "textarea", 

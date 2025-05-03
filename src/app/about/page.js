@@ -9,15 +9,14 @@ export default function About() {
   var LikeList = [
       "posca markers",
       "spreadsheets",
-      "topographic maps",
       "azuki beans",
       "pogs",
       "menpachi",
       "mini meat jun",
       "hinode rice",
       "chicago pigeons",
-      "simple green",
       "baby dill pickles",
+      "stinky takuan"
     ];
 
     const [selectedItems, setSelectedItems] = useState([]);
@@ -58,7 +57,7 @@ export default function About() {
     }, []);
 
   return (
-    <div className="flex justify-center p-10 lg:pt-40">
+    <div className="flex justify-center p-10 md:pt-40">
 
       <section className='md:max-w-[800px]'>
           <div>
@@ -76,20 +75,20 @@ export default function About() {
           </h2>
           {/* Random Clicker */}
           <div className='likeContainer block md:flex mb-10'>
-            <div className='likeText me-2' id='itemOne' onClick={() => { getRandomItem(0); console.log(selectedItems); }}>
+            <div className='likeText me-2 select-none' id='itemOne' onClick={() => { getRandomItem(0); console.log(selectedItems); }}>
               {selectedItems[0]},
             </div>
-            <div className='likeText me-2' id='itemTwo' onClick={() => { getRandomItem(1); console.log(selectedItems); }}>
+            <div className='likeText me-2 select-none' id='itemTwo' onClick={() => { getRandomItem(1); console.log(selectedItems); }}>
               {selectedItems[1]},
             </div>
-            <div className='likeText' id="itemThree" onClick={() => { getRandomItem(2); console.log(selectedItems); }}>
+            <div className='likeText select-none' id="itemThree" onClick={() => { getRandomItem(2); console.log(selectedItems); }}>
               &amp; {selectedItems[2]}!
             </div>
           </div>
 
           <div className='flex align-center gap-4'>
             <a
-              className='transition-opacity hover:opacity-10 hover:ease-in-out'
+              className='flex transition-opacity hover:opacity-10 hover:ease-in-out'
               href="https://www.linkedin.com/in/lorelei-miyamura/"
               onClick={(event) => {
                 event.preventDefault();
