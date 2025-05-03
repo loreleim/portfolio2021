@@ -15,3 +15,10 @@ For better fallback font handling, which honestly is handled in Next.js 14 with 
 ```
 npm i @next/font
 ```
+
+## Build to Github Pages
+
+```
+git remote add origin git@github.com:loreleim/portfolio-2021.git
+git push -u origin 2024
+```
