@@ -14,10 +14,10 @@ export function BlockCard({content}) {
 
         <div class="absolute top-0 left-0 w-full h-full bg-[#66e2ea] opacity-0 transition-opacity duration-200 ease-linear rounded-xl"></div>
 
-        <div class="p-4">
+        <div class="p-8 flex align-center justify-between">
           {/*<h4 class="font-semibold text-gray-900 dark:text-white">{content.title}</h4>*/}
           <h5 class="text-gray-700 dark:text-gray-400 tracking-[.3px] text-[14px]">{content.title}</h5>
-          <a href={content.link} className="inline-flex items-center text-sm font-medium text-center text-gray-700 dark:text-gray-400 mt-2">
+          <a href={content.link} className="inline-flex items-center text-sm font-medium text-center text-gray-700 dark:text-gray-400">
           &#8594;
           </a>
         </div>

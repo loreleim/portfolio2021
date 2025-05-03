@@ -7,7 +7,7 @@ class Database {
   constructor() {
     this.projects = [
       {
-        name: "Specialized Custom Waterbottles",
+        name: "Specialized Shopify Theme",
         urlSlug: "specialized",
         collab: "Specialized x Spectrum",
         description: "A Shopify x Customizer experience, including an Azure Functions' Order Acknowledgement integration",
