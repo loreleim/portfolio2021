@@ -1,4 +1,3 @@
-'use client'
 import { Nav } from '@/components/block-nav';
 import { motion } from 'framer-motion'
 

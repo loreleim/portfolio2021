@@ -1,4 +1,3 @@
-'use client'
 import ImageTemplate from '@/components/template-image';
 import Quicklinks from '@/components/template-quicklinks';
 import TagTemplate from '@/components/template-tags';
