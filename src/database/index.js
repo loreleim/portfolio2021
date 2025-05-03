@@ -261,7 +261,7 @@ class Database {
           {
             type: "quicklinks",
             firstText: "View Site", 
-            firstLink: "https://ltcquiz.ala.org/",
+            firstLink: "https://customize.lululemon.com/",
             //secondText: "Github",
             //secondLink: "https://github.com/loreleim/alagame"
           },
