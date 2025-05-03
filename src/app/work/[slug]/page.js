@@ -44,3 +44,9 @@ export default function Page({ params }) {
     </div>
   );
 }
+
+export async function generateStaticParams() {
+  return store.projects.map((project) => ({
+    slug: project.urlSlug,
+  }));
+}
